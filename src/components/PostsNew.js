@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 class PostsNew extends Component {
-  state = {};
   render() {
-    return <div>Post New</div>;
+    return (
+      <div>
+        <h3>Post New</h3>
+        <Link className="btn btn-primary" to="/">
+          Cancel
+        </Link>
+      </div>
+    );
   }
 }
 
